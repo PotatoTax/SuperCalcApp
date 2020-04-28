@@ -1,0 +1,12 @@
+{
+  "binomialCDF": {
+    "name": "Binomial Cumulative Distribution Function",
+    "description": "Computes a binomial "
+  },
+  "binomialPDF": {
+
+  },
+  "equationParser": {
+
+  }
+}

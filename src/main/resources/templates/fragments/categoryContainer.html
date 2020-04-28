@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="categoryContainer (category)">
+    <div>
+        <!--/*@thymesVar id="category" type="com.supercalc.app.CategoryData"*/-->
+        <a th:href="${category.getLink()}" th:text="${category.getName()}"></a>
+        <div th:each="method: ${category.getMethods().entrySet()}" class="w3-margin-left">
+            <!--/*@thymesVar id="method" type="java.util.Map.Entry"*/-->
+            <a th:href="${method.getValue()}" th:text="${method.getKey()}"></a>
+        </div>
+    </div>
+</div>
+
+</html>
